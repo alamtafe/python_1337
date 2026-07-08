@@ -31,9 +31,12 @@ else:
             print("Not saving data.")
         else:
             print(f"Saving data to '{name}'")
-            new_file: typing.IO = open(name, "w")
-            new_file.write(new_text)
-            new_file.close()
-            print(f"Data saved in file '{name}'.")
-    except Exception as e:`
+            try:
+                new_file: typing.IO = open(name, "w")
+                new_file.write(new_text)
+                new_file.close()
+                print(f"Data saved in file '{name}'.")
+            except Exception as e:
+                print(f"Error opening file '{name}': {e}")
+    except Exception as e:
         print(f"Error opening file '{sys.argv[1]}': {e}")
