@@ -17,6 +17,6 @@ else:
         print()
         print("---")
         file.close()
-        print("File '{sys.argv[1]}' closed.")
+        print(f"File '{sys.argv[1]}' closed.")
     except Exception as e:
         print(f"Error opening file '{sys.argv[1]}': {e}")
