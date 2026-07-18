@@ -1,6 +1,6 @@
 #!/usr/bin/env python03
 def create_fire() -> str:
-    return "fire element created"
+    return "Fire element created"
 
 
 def create_water() -> str:
