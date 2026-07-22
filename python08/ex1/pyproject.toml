@@ -1,0 +1,9 @@
+[tool.poetry]
+name = "loading"
+version = "0.1.0"
+description = "Data analysis tool"
+[tool.poetry.dependencies]
+python = "^3.13"
+numpy = "*"
+pandas = "*"
+matplotlib = "*"
